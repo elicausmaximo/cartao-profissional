@@ -1,213 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Érica Máximo | Estratégia Patrimonial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Érica Máximo | Estratégia Patrimonial</title>
 
-  <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+body{
+  font-family:'Montserrat',sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  background:
+    linear-gradient(180deg,rgba(10,20,40,.70),rgba(10,20,40,.88)),
+    url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      min-height: 100vh;
-      background:
-linear-gradient(180deg, rgba(10,20,40,.78), rgba(10,20,40,.90)),
-url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1800&q=80");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-    }
+.card{
+  width:360px;
+  padding:30px 22px;
+  border-radius:28px;
+  background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.12));
+  backdrop-filter:blur(22px);
+  border:1px solid rgba(255,255,255,.28);
+  box-shadow:0 30px 70px rgba(0,0,0,.45);
+  text-align:center;
+  animation:fadeUp .9s ease;
+}
 
-    .card {
-      width: 360px;
-      padding: 28px 22px;
-      border-radius: 26px;
-      background: rgba(255,255,255,.14);
-      backdrop-filter: blur(22px);
-      border: 1px solid rgba(255,255,255,.25);
-      box-shadow: 0 30px 60px rgba(0,0,0,.45);
-      text-align: center;
-      animation: fadeUp .8s ease;
-    }
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+.profile img{
+  width:132px;
+  height:132px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #2f6fb2;
+  box-shadow:0 18px 40px rgba(0,0,0,.45);
+  margin-bottom:16px;
+}
 
-    .profile img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #2f6fb2;
-      box-shadow: 0 18px 40px rgba(0,0,0,.45);
-      margin-bottom: 14px;
-    }
+h1{font-size:22px;font-weight:700;margin-bottom:6px}
+h2{font-size:14px;font-weight:400;opacity:.85;margin-bottom:16px}
 
-    h1 {
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
+.bio{
+  font-size:13px;
+  line-height:1.55;
+  opacity:.9;
+  margin-bottom:24px;
+}
 
-    h2 {
-      font-size: 14px;
-      font-weight: 400;
-      opacity: .85;
-      margin-bottom: 14px;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:20px;
+}
 
-    .bio {
-      font-size: 13px;
-      line-height: 1.55;
-      opacity: .9;
-      margin-bottom: 22px;
-    }
+.btn{
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.30);
+  border-radius:14px;
+  padding:14px 10px;
+  font-size:13px;
+  color:#fff;
+  cursor:pointer;
+  transition:.25s;
+  text-decoration:none;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      margin-bottom: 18px;
-    }
+.btn:hover{
+  transform:scale(1.05);
+  background:rgba(255,255,255,.26);
+}
 
-    .btn {
-      background: rgba(255,255,255,.18);
-      border: 1px solid rgba(255,255,255,.28);
-      border-radius: 14px;
-      padding: 12px;
-      font-size: 13px;
-      cursor: pointer;
-      transition: .25s;
-    }
+.main-btn{
+  width:100%;
+  background:#2f6fb2;
+  border:none;
+  border-radius:20px;
+  padding:15px;
+  font-weight:600;
+  font-size:14px;
+  margin:20px 0;
+  cursor:pointer;
+  transition:.25s;
+}
 
-    .btn:hover {
-      transform: scale(1.04);
-      background: rgba(255,255,255,.25);
-    }
+.main-btn:hover{transform:scale(1.06)}
 
-    .main-btn {
-      width: 100%;
-      background: #2f6fb2;
-      border: none;
-      border-radius: 18px;
-      padding: 14px;
-      font-weight: 600;
-      margin: 18px 0;
-      cursor: pointer;
-      transition: .25s;
-      color: #fff;
-    }
+.highlight{
+  background:rgba(255,255,255,.18);
+  border-radius:18px;
+  padding:18px;
+  text-align:left;
+}
 
-    .main-btn:hover {
-      transform: scale(1.05);
-    }
+.highlight h3{font-size:15px;margin-bottom:8px}
+.highlight p{font-size:12px;opacity:.9;margin-bottom:12px}
 
-    .highlight {
-      background: rgba(255,255,255,.16);
-      border-radius: 18px;
-      padding: 16px;
-      text-align: left;
-    }
+.highlight button{
+  background:#2f6fb2;
+  border:none;
+  border-radius:14px;
+  padding:10px 14px;
+  font-size:12px;
+  color:#fff;
+  cursor:pointer;
+}
 
-    .highlight h3 {
-      font-size: 15px;
-      margin-bottom: 6px;
-    }
+.social{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+}
 
-    .highlight p {
-      font-size: 12px;
-      opacity: .9;
-      margin-bottom: 10px;
-    }
+.social a{color:#fff;font-size:18px;opacity:.85}
 
-    .highlight button {
-      background: #2f6fb2;
-      border: none;
-      border-radius: 14px;
-      padding: 10px 14px;
-      font-size: 12px;
-      cursor: pointer;
-      color: #fff;
-    }
-
-    .social {
-      margin-top: 18px;
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      font-size: 18px;
-      opacity: .8;
-    }
-
-    footer {
-      margin-top: 12px;
-      font-size: 11px;
-      opacity: .6;
-    }
-  </style>
+footer{margin-top:14px;font-size:11px;opacity:.65}
+</style>
 </head>
 
 <body>
 
-  <div class="card">
-
-    <!-- FOTO DE PERFIL -->
-    <div class="profile">
-      <img src="erica-maximo.jpg" alt="Érica Máximo">
-    </div>
-
-    <h1>Érica Máximo</h1>
-    <h2>Estratégia Patrimonial & Consórcios</h2>
-
-    <p class="bio">
-      Conduzo decisões patrimoniais com foco em previsibilidade,
-      disciplina financeira e construção de patrimônio sustentável
-      no curto, médio e longo prazo.
-    </p>
-
-    <div class="grid">
-      <div class="btn"><i class="fab fa-whatsapp"></i><br>Conversa Direta</div>
-      <div class="btn"><i class="fa-solid fa-clipboard-check"></i><br>Diagnóstico</div>
-      <div class="btn"><i class="fa-solid fa-envelope"></i><br>Contato</div>
-      <div class="btn"><i class="fa-solid fa-lightbulb"></i><br>Insights</div>
-    </div>
-
-    <button class="main-btn">ADICIONAR AOS MEUS CONTATOS</button>
-
-    <div class="highlight">
-      <h3>Estratégia Patrimonial Inteligente</h3>
-      <p>
-        Abordagem estruturada para quem busca crescimento sustentável,
-        segurança e decisões financeiras conscientes.
-      </p>
-      <button>Conhecer a Abordagem</button>
-    </div>
-
-    <div class="social">
-      <i class="fab fa-linkedin"></i>
-      <i class="fab fa-instagram"></i>
-    </div>
-
-    <footer>© 2025 · Estratégia Patrimonial</footer>
-
+<div class="card">
+  <div class="profile">
+    <img src="erica-maximo.jpg" alt="Érica Máximo">
   </div>
+
+  <h1>Érica Máximo</h1>
+  <h2>Estratégia Patrimonial & Consórcios</h2>
+
+  <p class="bio">
+    Conduzo decisões patrimoniais com foco em previsibilidade, disciplina financeira
+    e construção de patrimônio sustentável no curto, médio e longo prazo.
+  </p>
+
+  <div class="grid">
+    <a class="btn" href="https://wa.me/5599999999999?text=Olá%20Érica,%20gostaria%20de%20uma%20conversa%20estratégica." target="_blank">
+      <i class="fab fa-whatsapp"></i><br>Conversa Direta
+    </a>
+
+    <a class="btn" href="mailto:seuemail@dominio.com">
+      <i class="fa-solid fa-clipboard-check"></i><br>Diagnóstico
+    </a>
+
+    <a class="btn" href="mailto:seuemail@dominio.com">
+      <i class="fa-solid fa-envelope"></i><br>Contato
+    </a>
+
+    <a class="btn" href="#">
+      <i class="fa-solid fa-lightbulb"></i><br>Insights
+    </a>
+  </div>
+
+  <button class="main-btn" onclick="downloadVCard()">ADICIONAR AOS MEUS CONTATOS</button>
+
+  <div class="highlight">
+    <h3>Estratégia Patrimonial Inteligente</h3>
+    <p>
+      Abordagem estruturada para quem busca crescimento sustentável,
+      segurança e decisões financeiras conscientes.
+    </p>
+    <button>Conhecer a Abordagem</button>
+  </div>
+
+  <div class="social">
+    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <footer>© 2025 · Estratégia Patrimonial</footer>
+</div>
+
+<script>
+function downloadVCard(){
+  const vcard = `BEGIN:VCARD
+VERSION:3.0
+FN:Érica Máximo
+N:Máximo;Érica
+TITLE:Estratégia Patrimonial & Consórcios
+TEL;TYPE=CELL:+55 99 99999-9999
+EMAIL:seuemail@dominio.com
+END:VCARD`;
+
+  const blob = new Blob([vcard], { type: 'text/vcard' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = 'Erica-Maximo.vcf';
+  link.click();
+}
+</script>
 
 </body>
 </html>
