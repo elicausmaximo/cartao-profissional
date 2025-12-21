@@ -18,9 +18,11 @@ body{
   justify-content:center;
   align-items:center;
   color:#fff;
+
+  /* FUNDO FEMININO – CONSULTORIA */
   background:
-    linear-gradient(180deg,rgba(10,20,40,.70),rgba(10,20,40,.88)),
-    url("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1800&q=80");
+    linear-gradient(180deg,rgba(10,20,40,.72),rgba(10,20,40,.90)),
+    url("https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=1800&q=80");
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
@@ -32,7 +34,7 @@ body{
   border-radius:28px;
   background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.12));
   backdrop-filter:blur(22px);
-  border:1px solid rgba(255,255,255,.28);
+  border:1px solid rgba(255,255,255,.30);
   box-shadow:0 30px 70px rgba(0,0,0,.45);
   text-align:center;
   animation:fadeUp .9s ease;
@@ -71,15 +73,21 @@ h2{font-size:14px;font-weight:400;opacity:.85;margin-bottom:16px}
 }
 
 .btn{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:6px;
+
   background:rgba(255,255,255,.18);
   border:1px solid rgba(255,255,255,.30);
   border-radius:14px;
   padding:14px 10px;
   font-size:13px;
   color:#fff;
+  text-decoration:none;
   cursor:pointer;
   transition:.25s;
-  text-decoration:none;
 }
 
 .btn:hover{
@@ -98,6 +106,7 @@ h2{font-size:14px;font-weight:400;opacity:.85;margin-bottom:16px}
   margin:20px 0;
   cursor:pointer;
   transition:.25s;
+  color:#fff;
 }
 
 .main-btn:hover{transform:scale(1.06)}
@@ -112,14 +121,14 @@ h2{font-size:14px;font-weight:400;opacity:.85;margin-bottom:16px}
 .highlight h3{font-size:15px;margin-bottom:8px}
 .highlight p{font-size:12px;opacity:.9;margin-bottom:12px}
 
-.highlight button{
+.highlight a{
+  display:inline-block;
   background:#2f6fb2;
-  border:none;
   border-radius:14px;
   padding:10px 14px;
   font-size:12px;
   color:#fff;
-  cursor:pointer;
+  text-decoration:none;
 }
 
 .social{
@@ -138,6 +147,7 @@ footer{margin-top:14px;font-size:11px;opacity:.65}
 <body>
 
 <div class="card">
+
   <div class="profile">
     <img src="erica-maximo.jpg" alt="Érica Máximo">
   </div>
@@ -146,37 +156,56 @@ footer{margin-top:14px;font-size:11px;opacity:.65}
   <h2>Estratégia Patrimonial & Consórcios</h2>
 
   <p class="bio">
-    Conduzo decisões patrimoniais com foco em previsibilidade, disciplina financeira
-    e construção de patrimônio sustentável no curto, médio e longo prazo.
+    Conduzo decisões patrimoniais com foco em previsibilidade,
+    disciplina financeira e construção de patrimônio sustentável.
   </p>
 
   <div class="grid">
-    <a class="btn" href="https://wa.me/5599999999999?text=Olá%20Érica,%20gostaria%20de%20uma%20conversa%20estratégica." target="_blank">
-      <i class="fab fa-whatsapp"></i><br>Conversa Direta
+
+    <!-- WHATSAPP -->
+    <a class="btn"
+       href="https://wa.me/5599999999999?text=Olá%20Érica,%20gostaria%20de%20uma%20conversa%20estratégica."
+       target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      Conversa Direta
     </a>
 
-    <a class="btn" href="mailto:seuemail@dominio.com">
-      <i class="fa-solid fa-clipboard-check"></i><br>Diagnóstico
+    <!-- DIAGNÓSTICO (EMAIL) -->
+    <a class="btn"
+       href="mailto:seuemail@dominio.com?subject=Diagnóstico%20Patrimonial">
+      <i class="fa-solid fa-clipboard-check"></i>
+      Diagnóstico
     </a>
 
-    <a class="btn" href="mailto:seuemail@dominio.com">
-      <i class="fa-solid fa-envelope"></i><br>Contato
+    <!-- CONTATO -->
+    <a class="btn"
+       href="mailto:seuemail@dominio.com">
+      <i class="fa-solid fa-envelope"></i>
+      Contato
     </a>
 
-    <a class="btn" href="#">
-      <i class="fa-solid fa-lightbulb"></i><br>Insights
+    <!-- INSIGHTS -->
+    <a class="btn"
+       href="https://www.linkedin.com/"
+       target="_blank">
+      <i class="fa-solid fa-lightbulb"></i>
+      Insights
     </a>
+
   </div>
 
-  <button class="main-btn" onclick="downloadVCard()">ADICIONAR AOS MEUS CONTATOS</button>
+  <!-- VCARD -->
+  <button class="main-btn" onclick="downloadVCard()">
+    ADICIONAR AOS MEUS CONTATOS
+  </button>
 
   <div class="highlight">
     <h3>Estratégia Patrimonial Inteligente</h3>
     <p>
-      Abordagem estruturada para quem busca crescimento sustentável,
+      Abordagem estruturada para crescimento sustentável,
       segurança e decisões financeiras conscientes.
     </p>
-    <button>Conhecer a Abordagem</button>
+    <a href="#">Conhecer a Abordagem</a>
   </div>
 
   <div class="social">
