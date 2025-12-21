@@ -6,161 +6,150 @@
 <title>Érica Máximo | Estratégia Patrimonial</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Montserrat',sans-serif}
+*{box-sizing:border-box}
 
 body{
+margin:0;
+font-family:'Montserrat',sans-serif;
 min-height:100vh;
 background:
-linear-gradient(180deg, rgba(15,25,45,0.85), rgba(15,25,45,0.95)),
-url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1800&q=80&v=2");
+linear-gradient(180deg,rgba(10,20,40,.88),rgba(10,20,40,.96)),
+url("https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&w=1800&q=80&v=10");
 background-size:cover;
 background-position:center;
+background-attachment:fixed;
 display:flex;
-justify-content:center;
 align-items:center;
-padding:24px;
+justify-content:center;
 color:#fff;
 }
 
 .card{
-max-width:420px;
-width:100%;
-background:rgba(255,255,255,0.18);
+width:360px;
+padding:28px 22px;
+border-radius:26px;
+background:rgba(255,255,255,.14);
 backdrop-filter:blur(22px);
-border-radius:32px;
-padding:36px 28px;
-border:1px solid rgba(255,255,255,0.35);
-box-shadow:0 40px 90px rgba(0,0,0,0.45);
-animation:fade 1s ease;
+border:1px solid rgba(255,255,255,.25);
+box-shadow:0 30px 60px rgba(0,0,0,.45);
+text-align:center;
+animation:fadeUp .9s ease;
 }
 
-@keyframes fade{
-from{opacity:0;transform:translateY(40px)}
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(30px)}
 to{opacity:1;transform:translateY(0)}
 }
 
-.profile{text-align:center}
-
 .profile img{
-width:140px;
-height:140px;
+width:130px;
+height:130px;
 border-radius:50%;
 object-fit:cover;
 object-position:center top;
-border:4px solid #2f6fb2;
-box-shadow:0 20px 50px rgba(0,0,0,0.5);
-margin-bottom:20px;
-background:#fff;
+border:3px solid #2f6fb2;
+box-shadow:0 18px 40px rgba(0,0,0,.45);
+margin-bottom:14px;
 }
 
-.profile h1{
-font-size:23px;
+h1{
+font-size:22px;
 font-weight:700;
-letter-spacing:0.4px;
+margin:6px 0;
 }
 
-.profile h2{
+h2{
 font-size:14px;
 font-weight:400;
-color:#d6e1f2;
-margin-top:6px;
+opacity:.85;
+margin-bottom:14px;
 }
 
-.profile p{
+.bio{
 font-size:13px;
-line-height:1.75;
-margin-top:16px;
-color:#eef3fa;
+line-height:1.55;
+opacity:.9;
+margin-bottom:22px;
 }
 
-.actions{
+.grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:14px;
-margin-top:28px;
+gap:12px;
+margin-bottom:18px;
 }
 
 .btn{
-background:rgba(255,255,255,0.20);
-border:1px solid rgba(255,255,255,0.35);
-border-radius:18px;
-padding:16px 10px;
-text-align:center;
+background:rgba(255,255,255,.18);
+border:1px solid rgba(255,255,255,.28);
+border-radius:14px;
+padding:12px;
 font-size:13px;
+cursor:pointer;
+transition:.25s;
 color:#fff;
-text-decoration:none;
-transition:all .25s ease;
-}
-
-.btn i{
-display:block;
-font-size:18px;
-margin-bottom:6px;
 }
 
 .btn:hover{
-background:rgba(255,255,255,0.32);
-transform:translateY(-2px);
+transform:scale(1.04);
+background:rgba(255,255,255,.25);
 }
 
-.primary{
-margin-top:26px;
-background:linear-gradient(135deg,#2f6fb2,#1f4f85);
-padding:18px;
-border-radius:22px;
+.main-btn{
+background:#2f6fb2;
+border:none;
+border-radius:18px;
+padding:14px;
 font-weight:600;
-text-align:center;
-letter-spacing:0.4px;
-box-shadow:0 14px 40px rgba(0,0,0,0.4);
+margin:18px 0;
+cursor:pointer;
+transition:.25s;
 }
+
+.main-btn:hover{transform:scale(1.05)}
 
 .highlight{
-margin-top:30px;
-background:rgba(255,255,255,0.20);
-border-radius:24px;
-padding:20px;
+background:rgba(255,255,255,.16);
+border-radius:18px;
+padding:16px;
+text-align:left;
 }
 
 .highlight h3{
-font-size:14px;
-margin-bottom:8px;
+font-size:15px;
+margin-bottom:6px;
 }
 
 .highlight p{
 font-size:12px;
-color:#e8eff8;
-margin-bottom:14px;
+opacity:.9;
+margin-bottom:10px;
 }
 
-.highlight a{
+.highlight button{
 background:#2f6fb2;
-padding:10px 20px;
-border-radius:18px;
+border:none;
+border-radius:14px;
+padding:10px 14px;
 font-size:12px;
-color:#fff;
-text-decoration:none;
-display:inline-block;
+cursor:pointer;
 }
 
-.footer{
-margin-top:28px;
-text-align:center;
+.social{
+margin-top:18px;
+display:flex;
+justify-content:center;
+gap:16px;
+opacity:.8;
 }
 
-.footer a{
-color:#dbe6f5;
-margin:0 10px;
-font-size:18px;
-text-decoration:none;
-}
-
-.footer p{
+footer{
 margin-top:12px;
 font-size:11px;
-color:#b9c6d8;
+opacity:.6;
 }
 </style>
 </head>
@@ -168,42 +157,42 @@ color:#b9c6d8;
 <body>
 
 <div class="card">
+  <div class="profile">
+    <img src="erica-maximo.jpg" alt="Érica Máximo">
+  </div>
 
-<div class="profile">
-<img src="erica-maximo.jpg" alt="Érica Máximo">
-<h1>Érica Máximo</h1>
-<h2>Estratégia Patrimonial & Consórcios</h2>
-<p>
-Conduzo decisões patrimoniais com foco em previsibilidade,
-disciplina financeira e construção de patrimônio sustentável
-no curto, médio e longo prazo.
-</p>
-</div>
+  <h1>Érica Máximo</h1>
+  <h2>Estratégia Patrimonial & Consórcios</h2>
 
-<div class="actions">
-<a class="btn" href="#"><i class="fab fa-whatsapp"></i>Conversa Direta</a>
-<a class="btn" href="#"><i class="fas fa-clipboard-check"></i>Diagnóstico</a>
-<a class="btn" href="#"><i class="fas fa-envelope"></i>Contato</a>
-<a class="btn" href="#"><i class="fas fa-lightbulb"></i>Insights</a>
-</div>
+  <p class="bio">
+    Conduzo decisões patrimoniais com foco em previsibilidade, disciplina financeira
+    e construção de patrimônio sustentável no curto, médio e longo prazo.
+  </p>
 
-<div class="primary">ADICIONAR AOS MEUS CONTATOS</div>
+  <div class="grid">
+    <div class="btn"><i class="fab fa-whatsapp"></i><br>Conversa Direta</div>
+    <div class="btn"><i class="fa-solid fa-clipboard-check"></i><br>Diagnóstico</div>
+    <div class="btn"><i class="fa-solid fa-envelope"></i><br>Contato</div>
+    <div class="btn"><i class="fa-solid fa-lightbulb"></i><br>Insights</div>
+  </div>
 
-<div class="highlight">
-<h3>Estratégia Patrimonial Inteligente</h3>
-<p>
-Abordagem estruturada para quem busca crescimento sustentável,
-segurança e decisões financeiras conscientes.
-</p>
-<a href="#">Conhecer a Abordagem</a>
-</div>
+  <button class="main-btn">ADICIONAR AOS MEUS CONTATOS</button>
 
-<div class="footer">
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<p>© 2025 • Estratégia Patrimonial</p>
-</div>
+  <div class="highlight">
+    <h3>Estratégia Patrimonial Inteligente</h3>
+    <p>
+      Abordagem estruturada para quem busca crescimento sustentável,
+      segurança e decisões financeiras conscientes.
+    </p>
+    <button>Conhecer a Abordagem</button>
+  </div>
 
+  <div class="social">
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-instagram"></i>
+  </div>
+
+  <footer>© 2025 · Estratégia Patrimonial</footer>
 </div>
 
 </body>
