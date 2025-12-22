@@ -3,169 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Érica Máximo | Estratégia Patrimonial</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-margin:0;
-font-family:'Montserrat',sans-serif;
-min-height:100vh;
-background:
-linear-gradient(180deg,rgba(10,20,40,.80),rgba(10,20,40,.92)),
-url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#fff;
+  font-family:'Montserrat',sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  background:
+    linear-gradient(180deg,rgba(10,20,40,.80),rgba(10,20,40,.92)),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
 }
 
 .card{
-width:360px;
-padding:30px 22px;
-border-radius:28px;
-background:rgba(255,255,255,.14);
-backdrop-filter:blur(22px);
-border:1px solid rgba(255,255,255,.25);
-box-shadow:0 30px 60px rgba(0,0,0,.45);
-text-align:center;
-animation:fadeUp .8s ease;
+  width:380px;
+  padding:32px 22px;
+  border-radius:28px;
+  background:rgba(255,255,255,.14);
+  backdrop-filter:blur(22px);
+  border:1px solid rgba(255,255,255,.28);
+  box-shadow:0 30px 60px rgba(0,0,0,.45);
+  text-align:center;
+  animation:fadeUp .9s ease;
 }
 
 @keyframes fadeUp{
-from{opacity:0;transform:translateY(30px)}
-to{opacity:1;transform:translateY(0)}
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
 }
 
 .profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-object-fit:cover;
-border:3px solid #2f6fb2;
-box-shadow:0 18px 40px rgba(0,0,0,.45);
-margin-bottom:14px;
+  width:134px;
+  height:134px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #2f6fb2;
+  box-shadow:0 16px 40px rgba(0,0,0,.45);
+  margin-bottom:16px;
 }
 
 h1{
-font-size:22px;
-font-weight:700;
-margin:6px 0;
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:4px;
 }
 
 h2{
-font-size:14px;
-font-weight:400;
-opacity:.85;
-margin-bottom:14px;
+  font-size:14px;
+  font-weight:400;
+  opacity:.85;
+  margin-bottom:14px;
 }
 
 .bio{
-font-size:13px;
-line-height:1.55;
-opacity:.9;
-margin-bottom:22px;
+  font-size:13px;
+  line-height:1.55;
+  opacity:.9;
+  margin-bottom:20px;
 }
 
 .grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-margin-bottom:20px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-bottom:20px;
 }
 
 .btn{
-display:block;
-text-decoration:none;
-background:rgba(255,255,255,.18);
-border:1px solid rgba(255,255,255,.28);
-border-radius:14px;
-padding:14px 10px;
-font-size:13px;
-color:#fff;
-transition:.25s;
-}
-
-.btn i{
-font-size:16px;
-margin-bottom:6px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  text-decoration:none;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:14px;
+  padding:14px 10px;
+  font-size:13px;
+  color:#fff;
+  transition:.25s;
 }
 
 .btn:hover{
-transform:scale(1.05);
-background:rgba(255,255,255,.26);
+  transform:scale(1.06);
+  background:rgba(255,255,255,.26);
 }
 
 .main-btn{
-display:block;
-background:#2f6fb2;
-border:none;
-border-radius:18px;
-padding:14px;
-font-weight:600;
-margin:18px 0;
-color:#fff;
-text-decoration:none;
-transition:.25s;
+  display:block;
+  background:#2f6fb2;
+  border:none;
+  border-radius:20px;
+  padding:14px;
+  font-weight:600;
+  font-size:14px;
+  margin:20px 0;
+  color:#fff;
+  text-decoration:none;
+  transition:.25s;
 }
 
-.main-btn:hover{transform:scale(1.06)}
+.main-btn:hover{
+  transform:scale(1.07);
+  background:#3a82c6;
+}
 
 .highlight{
-background:rgba(255,255,255,.16);
-border-radius:18px;
-padding:16px;
-text-align:left;
+  background:rgba(255,255,255,.16);
+  border-radius:18px;
+  padding:18px;
+  text-align:left;
 }
 
 .highlight h3{
-font-size:15px;
-margin-bottom:6px;
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:8px;
 }
 
 .highlight p{
-font-size:12px;
-opacity:.9;
-margin-bottom:12px;
+  font-size:12px;
+  opacity:.9;
+  margin-bottom:12px;
 }
 
 .highlight a{
-background:#2f6fb2;
-border-radius:14px;
-padding:10px 14px;
-font-size:12px;
-color:#fff;
-text-decoration:none;
+  display:inline-block;
+  background:#2f6fb2;
+  border-radius:14px;
+  padding:10px 14px;
+  font-size:12px;
+  color:#fff;
+  text-decoration:none;
 }
 
 .social{
-margin-top:20px;
-display:flex;
-justify-content:center;
-gap:18px;
+  margin-top:18px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
 }
 
 .social a{
-color:#fff;
-opacity:.8;
-font-size:18px;
-transition:.25s;
+  font-size:18px;
+  color:#fff;
+  opacity:.85;
+  transition:.25s;
 }
 
-.social a:hover{opacity:1}
+.social a:hover{
+  opacity:1;
+}
 
 footer{
-margin-top:14px;
-font-size:11px;
-opacity:.6;
+  margin-top:14px;
+  font-size:11px;
+  opacity:.6;
 }
 </style>
 </head>
@@ -190,45 +195,47 @@ opacity:.6;
   <div class="grid">
 
     <a class="btn"
-       href="https://wa.me/5511999998888?text=Olá%20Érica,%20vim%20pelo%20seu%20cartão%20digital%20e%20gostaria%20de%20conversar%20sobre%20planejamento%20patrimonial."
+       href="https://wa.me/5511992775372?text=Olá%20Érica,%20vim%20pelo%20seu%20cartão%20digital%20e%20gostaria%20de%20uma%20conversa%20estratégica."
        target="_blank">
-      <i class="fab fa-whatsapp"></i><br>
+      <i class="fab fa-whatsapp"></i>
       Conversa Direta
     </a>
 
-    <a class="btn" href="mailto:contato@seudominio.com">
-      <i class="fa-solid fa-envelope"></i><br>
+    <a class="btn" href="mailto:contato@exemplo.com">
+      <i class="fa-solid fa-envelope"></i>
       Contato
     </a>
 
-    <a class="btn" href="https://linkedin.com" target="_blank">
-      <i class="fab fa-linkedin"></i><br>
+    <a class="btn" href="https://www.linkedin.com/in/érica-máximo" target="_blank">
+      <i class="fab fa-linkedin"></i>
       LinkedIn
     </a>
 
-    <a class="btn" href="https://instagram.com" target="_blank">
-      <i class="fab fa-instagram"></i><br>
+    <a class="btn" href="https://www.instagram.com/elicaus" target="_blank">
+      <i class="fab fa-instagram"></i>
       Instagram
     </a>
 
   </div>
 
-  <a class="main-btn" href="#">
-    ADICIONAR AOS MEUS CONTATOS
+  <a class="main-btn"
+     href="https://wa.me/5511992775372?text=Quero%20agendar%20uma%20conversa%20estratégica."
+     target="_blank">
+    AGENDAR CONVERSA ESTRATÉGICA
   </a>
 
   <div class="highlight">
-    <h3>Estratégia Patrimonial Inteligente</h3>
+    <h3>Consultoria Patrimonial Inteligente</h3>
     <p>
-      Abordagem estruturada para quem busca crescimento sustentável,
-      segurança e decisões financeiras conscientes.
+      Diagnóstico estruturado, clareza na tomada de decisão
+      e estratégias alinhadas aos seus objetivos de vida e patrimônio.
     </p>
-    <a href="#">Conhecer a Abordagem</a>
+    <a href="https://wa.me/5511992775372" target="_blank">Conhecer a Abordagem</a>
   </div>
 
   <div class="social">
-    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/érica-máximo" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/elicaus" target="_blank"><i class="fab fa-instagram"></i></a>
   </div>
 
   <footer>© 2025 · Estratégia Patrimonial</footer>
@@ -237,3 +244,4 @@ opacity:.6;
 
 </body>
 </html>
+
