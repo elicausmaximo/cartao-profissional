@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Érica Máximo | Estratégia Patrimonial</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -15,41 +15,34 @@ body{
   font-family:'Montserrat',sans-serif;
   min-height:100vh;
   display:flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
   color:#fff;
   background:
-    linear-gradient(180deg,rgba(10,20,40,.80),rgba(10,20,40,.92)),
-    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80");
+    linear-gradient(180deg,rgba(10,20,40,.82),rgba(10,20,40,.94)),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80");
   background-size:cover;
   background-position:center;
-  background-attachment:fixed;
 }
 
 .card{
   width:380px;
-  padding:32px 22px;
-  border-radius:28px;
-  background:rgba(255,255,255,.14);
-  backdrop-filter:blur(22px);
+  padding:34px 24px;
+  border-radius:30px;
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(24px);
   border:1px solid rgba(255,255,255,.28);
-  box-shadow:0 30px 60px rgba(0,0,0,.45);
+  box-shadow:0 32px 60px rgba(0,0,0,.45);
   text-align:center;
-  animation:fadeUp .9s ease;
-}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(30px)}
-  to{opacity:1;transform:translateY(0)}
 }
 
 .profile img{
-  width:134px;
-  height:134px;
+  width:136px;
+  height:136px;
   border-radius:50%;
   object-fit:cover;
   border:3px solid #2f6fb2;
-  box-shadow:0 16px 40px rgba(0,0,0,.45);
+  box-shadow:0 16px 36px rgba(0,0,0,.45);
   margin-bottom:16px;
 }
 
@@ -70,10 +63,10 @@ h2{
   font-size:13px;
   line-height:1.55;
   opacity:.9;
-  margin-bottom:20px;
+  margin-bottom:22px;
 }
 
-/* GRID DE AÇÕES */
+/* AÇÕES */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -82,15 +75,10 @@ h2{
 }
 
 .btn{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:6px;
   text-decoration:none;
   background:rgba(255,255,255,.18);
   border:1px solid rgba(255,255,255,.28);
-  border-radius:14px;
+  border-radius:16px;
   padding:14px 10px;
   font-size:13px;
   color:#fff;
@@ -98,34 +86,28 @@ h2{
 }
 
 .btn:hover{
-  transform:scale(1.06);
+  transform:scale(1.05);
   background:rgba(255,255,255,.26);
 }
 
-/* CTA PRINCIPAL */
 .main-btn{
   display:block;
   background:#2f6fb2;
-  border:none;
-  border-radius:20px;
+  border-radius:22px;
   padding:14px;
   font-weight:600;
   font-size:14px;
   margin:18px 0;
   color:#fff;
   text-decoration:none;
-  transition:.25s;
 }
 
-.main-btn:hover{
-  transform:scale(1.06);
-  background:#3a82c6;
-}
+.main-btn:hover{background:#3b84cc}
 
-/* BLOCO DE DIFERENCIAL */
+/* BLOCO DE POSICIONAMENTO */
 .highlight{
   background:rgba(255,255,255,.16);
-  border-radius:18px;
+  border-radius:20px;
   padding:18px;
   text-align:left;
 }
@@ -139,13 +121,7 @@ h2{
 .highlight p{
   font-size:12px;
   opacity:.9;
-  margin-bottom:12px;
-}
-
-.highlight span{
-  display:block;
-  font-size:12px;
-  opacity:.85;
+  line-height:1.5;
 }
 
 /* SOCIAL */
@@ -153,18 +129,13 @@ h2{
   margin-top:18px;
   display:flex;
   justify-content:center;
-  gap:20px;
+  gap:18px;
 }
 
 .social a{
-  font-size:18px;
   color:#fff;
-  opacity:.85;
-  transition:.25s;
-}
-
-.social a:hover{
-  opacity:1;
+  font-size:18px;
+  opacity:.8;
 }
 
 footer{
@@ -187,51 +158,37 @@ footer{
   <h2>Estratégia Patrimonial & Consórcios</h2>
 
   <p class="bio">
-    Atuo no apoio à tomada de decisões patrimoniais,
-    conduzindo conversas estruturadas para quem busca clareza,
-    organização financeira e planejamento consciente.
+    Atuo no apoio à organização financeira e no esclarecimento de caminhos
+    para quem deseja estruturar patrimônio com consciência,
+    previsibilidade e responsabilidade.
   </p>
 
   <div class="grid">
-
-    <a class="btn"
-       href="https://wa.me/5511992775372?text=Olá%20Érica,%20vi%20seu%20cartão%20digital%20e%20gostaria%20de%20entender%20melhor%20como%20funciona%20seu%20processo."
-       target="_blank">
-      <i class="fab fa-whatsapp"></i>
-      Conversa Inicial
+    <a class="btn" href="https://wa.me/5511992775372" target="_blank">
+      <i class="fab fa-whatsapp"></i><br>Conversa Inicial
     </a>
-
     <a class="btn" href="mailto:contato@exemplo.com">
-      <i class="fa-solid fa-envelope"></i>
-      Contato
+      <i class="fa-solid fa-envelope"></i><br>Contato
     </a>
-
     <a class="btn" href="https://www.linkedin.com/in/érica-máximo" target="_blank">
-      <i class="fab fa-linkedin"></i>
-      LinkedIn
+      <i class="fab fa-linkedin"></i><br>LinkedIn
     </a>
-
     <a class="btn" href="https://www.instagram.com/elicaus" target="_blank">
-      <i class="fab fa-instagram"></i>
-      Instagram
+      <i class="fab fa-instagram"></i><br>Instagram
     </a>
-
   </div>
 
-  <a class="main-btn"
-     href="https://wa.me/5511992775372?text=Gostaria%20de%20iniciar%20uma%20conversa%20para%20entender%20meu%20momento%20financeiro."
-     target="_blank">
-    INICIAR CONVERSA ORIENTADA
+  <a class="main-btn" href="https://wa.me/5511992775372" target="_blank">
+    INICIAR CONVERSA DE ORIENTAÇÃO
   </a>
 
   <div class="highlight">
-    <h3>Como funciona minha atuação</h3>
+    <h3>Como posso te ajudar agora</h3>
     <p>
-      Meu trabalho começa com escuta e diagnóstico,
-      passa por organização das informações
-      e segue para decisões alinhadas ao seu momento atual.
+      Através de conversas estruturadas, ajudo você a entender seu momento atual,
+      organizar informações e avaliar possibilidades de forma consciente,
+      respeitando seu ritmo e seu nível de conhecimento.
     </p>
-    <span>Sem promessas. Sem pressão. Com responsabilidade.</span>
   </div>
 
   <div class="social">
