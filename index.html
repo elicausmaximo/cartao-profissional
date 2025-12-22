@@ -20,7 +20,7 @@ body{
   color:#fff;
   background:
     linear-gradient(180deg,rgba(10,20,40,.80),rgba(10,20,40,.92)),
-    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80");
+    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80");
   background-size:cover;
   background-position:center;
   background-attachment:fixed;
@@ -73,11 +73,12 @@ h2{
   margin-bottom:20px;
 }
 
+/* GRID DE AÇÕES */
 .grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:12px;
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
 
 .btn{
@@ -101,6 +102,7 @@ h2{
   background:rgba(255,255,255,.26);
 }
 
+/* CTA PRINCIPAL */
 .main-btn{
   display:block;
   background:#2f6fb2;
@@ -109,17 +111,18 @@ h2{
   padding:14px;
   font-weight:600;
   font-size:14px;
-  margin:20px 0;
+  margin:18px 0;
   color:#fff;
   text-decoration:none;
   transition:.25s;
 }
 
 .main-btn:hover{
-  transform:scale(1.07);
+  transform:scale(1.06);
   background:#3a82c6;
 }
 
+/* BLOCO DE DIFERENCIAL */
 .highlight{
   background:rgba(255,255,255,.16);
   border-radius:18px;
@@ -139,16 +142,13 @@ h2{
   margin-bottom:12px;
 }
 
-.highlight a{
-  display:inline-block;
-  background:#2f6fb2;
-  border-radius:14px;
-  padding:10px 14px;
+.highlight span{
+  display:block;
   font-size:12px;
-  color:#fff;
-  text-decoration:none;
+  opacity:.85;
 }
 
+/* SOCIAL */
 .social{
   margin-top:18px;
   display:flex;
@@ -187,18 +187,18 @@ footer{
   <h2>Estratégia Patrimonial & Consórcios</h2>
 
   <p class="bio">
-    Conduzo decisões patrimoniais com foco em previsibilidade,
-    disciplina financeira e construção de patrimônio sustentável
-    no curto, médio e longo prazo.
+    Atuo no apoio à tomada de decisões patrimoniais,
+    conduzindo conversas estruturadas para quem busca clareza,
+    organização financeira e planejamento consciente.
   </p>
 
   <div class="grid">
 
     <a class="btn"
-       href="https://wa.me/5511992775372?text=Olá%20Érica,%20vim%20pelo%20seu%20cartão%20digital%20e%20gostaria%20de%20uma%20conversa%20estratégica."
+       href="https://wa.me/5511992775372?text=Olá%20Érica,%20vi%20seu%20cartão%20digital%20e%20gostaria%20de%20entender%20melhor%20como%20funciona%20seu%20processo."
        target="_blank">
       <i class="fab fa-whatsapp"></i>
-      Conversa Direta
+      Conversa Inicial
     </a>
 
     <a class="btn" href="mailto:contato@exemplo.com">
@@ -219,18 +219,19 @@ footer{
   </div>
 
   <a class="main-btn"
-     href="https://wa.me/5511992775372?text=Quero%20agendar%20uma%20conversa%20estratégica."
+     href="https://wa.me/5511992775372?text=Gostaria%20de%20iniciar%20uma%20conversa%20para%20entender%20meu%20momento%20financeiro."
      target="_blank">
-    AGENDAR CONVERSA ESTRATÉGICA
+    INICIAR CONVERSA ORIENTADA
   </a>
 
   <div class="highlight">
-    <h3>Consultoria Patrimonial Inteligente</h3>
+    <h3>Como funciona minha atuação</h3>
     <p>
-      Diagnóstico estruturado, clareza na tomada de decisão
-      e estratégias alinhadas aos seus objetivos de vida e patrimônio.
+      Meu trabalho começa com escuta e diagnóstico,
+      passa por organização das informações
+      e segue para decisões alinhadas ao seu momento atual.
     </p>
-    <a href="https://wa.me/5511992775372" target="_blank">Conhecer a Abordagem</a>
+    <span>Sem promessas. Sem pressão. Com responsabilidade.</span>
   </div>
 
   <div class="social">
@@ -244,4 +245,3 @@ footer{
 
 </body>
 </html>
-
